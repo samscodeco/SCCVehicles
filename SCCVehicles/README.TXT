@@ -15,10 +15,14 @@ If you have a question, suggestions or feedback, I can be contacted by email or 
 [] execVM "SCCVehicles\vehInit.sqf";
 
 -----------------------------------
-2. CONFIGURATION
+2. USAGE
 -----------------------------------
 
-All configurable parameters can be found in 'SCCVehicles\Config\vehConfig.sqf'.
+When the script is installed, vehicles will be spawned in at the beginning of a mission based on the parameters specified in 'SCCVehicles\Config\vehConfig.sqf'.
+
+Vehicles can be saved/unsaved by using the scroll-wheel action menu. Saved vehicles will not disappear during a cleanup.
+
+To clean up all unsaved vehicles and spawn new ones, set 'sccvehiclesReset' to true somewhere in your mission.
 
 -----------------------------------
 3. FAQ
