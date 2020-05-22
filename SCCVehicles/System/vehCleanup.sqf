@@ -1,4 +1,5 @@
 _vehCount = 0;
+_vehToDelete = [];
 
 // Iterate through all spawned vehicles
 {
@@ -7,12 +8,18 @@ _vehCount = 0;
 	// If the vehicle is not owned
 	if (!(_vehObj in sccvehiclesAllOwnedVehicles)) then {
 		
-		// Delete the vehicle and remove it from the index of spawned vehicles
+		// Delete the vehicle
 		deleteVehicle _vehObj;
-		sccvehiclesAllSpawnedVehicles deleteAt (sccvehiclesAllSpawnedVehicles find _vehObj);
+		_vehToDelete pushBack _vehObj;
 
 	};
 	
 } forEach sccvehiclesAllSpawnedVehicles;
+
+{
+
+	sccvehiclesAllSpawnedVehicles deleteAt (sccvehiclesAllSpawnedVehicles find _x);
+
+} forEach _vehToDelete;
 
 true;
