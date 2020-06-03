@@ -20,7 +20,7 @@ The config file can be found at 'SCCVehicles\Config\vehConfig.sqf'.
 
 For a more detailed description and help, see the README.txt file inside the SCCVehicles directory.
 
-- [Latest Stable (0.1)](http://www.samscode.co/code/SCCVehicles.zip)
+- [Latest Stable (0.1)](http://www.samscode.co/code/SCCVehicles-0.1.zip)
 - [GitHub Source](https://github.com/samscodeco/SCCVehicles)
 
 ## License
