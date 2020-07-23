@@ -11,6 +11,7 @@ while {true} do {
 		
 	};
 	
+	sccvehiclesMapMarkers = [];
 	_markerCount = 0;
 
 	// Draw new markers
